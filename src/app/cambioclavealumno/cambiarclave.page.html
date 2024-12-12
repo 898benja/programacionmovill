@@ -1,0 +1,36 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar style="background-color: #FFD700;">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="menuprincipal" style="--color: white;"></ion-back-button>
+      </ion-buttons>
+      <ion-title style="color: white;">Cambiar Clave</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <ion-card class="ion-padding">
+      <ion-list>
+        <ion-item>
+          <ion-icon name="key" slot="start" style="color: white;"></ion-icon> <!-- Ícono en blanco -->
+          <ion-label position="floating" style="color: white;">Clave Actual</ion-label> <!-- Texto en blanco -->
+          <ion-input type="password" [(ngModel)]="claveActual"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="key" slot="start" style="color: white;"></ion-icon> <!-- Ícono en blanco -->
+          <ion-label position="floating" style="color: white;">Nueva Clave</ion-label> <!-- Texto en blanco -->
+          <ion-input type="password" [(ngModel)]="nuevaClave"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="key" slot="start" style="color: white;"></ion-icon> <!-- Ícono en blanco -->
+          <ion-label position="floating" style="color: white;">Confirmar Nueva Clave</ion-label> <!-- Texto en blanco -->
+          <ion-input type="password" [(ngModel)]="confirmarClave"></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-button expand="block" (click)="cambiarClave()">
+        <ion-icon name="key-outline" slot="start" style="color: white;"></ion-icon> <!-- Ícono en blanco -->
+        Cambiar Clave
+      </ion-button>
+    </ion-card>
+  </ion-content>
+</ion-app>

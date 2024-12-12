@@ -1,0 +1,29 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="home" style="--color: rgb(0, 0, 0);"></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+        <h1>Menú Principal</h1>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="welcome-title">Bienvenido al Sistema Profesor </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="welcome-message">Seleccione sus asignaturas para registrar asistencias :</p>
+        <ion-list>
+          <ion-item [routerLink]="['/registroasistprofe']">
+            <ion-icon slot="start" name="book-outline" aria-label="Mis Asignaturas"></ion-icon>
+            Mis Asignaturas
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-app>

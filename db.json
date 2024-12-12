@@ -1,0 +1,297 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "alumno",
+      "asignatura": "Mecánica",
+      "password": "alumno",
+      "seccion": "1",
+      "asistencias": [
+        {
+          "asignatura": "Mecánica",
+          "seccion": "1",
+          "fecha": "2024-11-03T08:00:00Z",
+          "asistio": false
+        },
+        {
+          "asignatura": "Redes de Computadores",
+          "seccion": "1",
+          "fecha": "2024-11-05T08:00:00Z",
+          "asistio": true
+        },
+        {
+          "asignatura": "Arquitectura de Computadoras",
+          "seccion": "1",
+          "fecha": "2024-11-07T08:00:00Z",
+          "asistio": true
+        },
+        {
+          "asignatura": "Bases de Datos",
+          "seccion": "1",
+          "fecha": "2024-11-09T08:00:00Z",
+          "asistio": true
+        },
+        {
+          "asignatura": "Matemáticas Discretas",
+          "seccion": "1",
+          "fecha": "2024-11-11T08:00:00Z",
+          "asistio": false
+        },
+        {
+          "asignatura": "Lógica de Programación",
+          "seccion": "1",
+          "fecha": "2024-11-13T08:00:00Z",
+          "asistio": true
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "username": "alumno1",
+      "password": "alumno1",
+      "asignatura": "Algoritmos y Estructuras de Datos",
+      "seccion": "2",
+      "asistencias": [
+        {
+          "asignatura": "Algoritmos y Estructuras de Datos",
+          "seccion": "2",
+          "fecha": "2024-11-02T08:00:00Z",
+          "asistio": true
+        },
+        {
+          "asignatura": "Sistemas Operativos",
+          "seccion": "2",
+          "fecha": "2024-11-06T08:00:00Z",
+          "asistio": true
+        },
+        {
+          "asignatura": "Ciberseguridad",
+          "seccion": "2",
+          "fecha": "2024-11-08T08:00:00Z",
+          "asistio": false
+        },
+        {
+          "asignatura": "Arquitectura de Software",
+          "seccion": "2",
+          "fecha": "2024-11-10T08:00:00Z",
+          "asistio": true
+        },
+        {
+          "asignatura": "Matemáticas para Ingenieros",
+          "seccion": "2",
+          "fecha": "2024-11-12T08:00:00Z",
+          "asistio": true
+        },
+        {
+          "asignatura": "Desarrollo de Software",
+          "seccion": "2",
+          "fecha": "2024-11-14T08:00:00Z",
+          "asistio": false
+        }
+      ]
+    }
+  ],
+  "profes": [
+    {
+      "id": "1",
+      "username": "profe",
+      "password": "profe"
+    },
+    {
+      "id": "2",
+      "username": "profe1",
+      "password": "profe1"
+    },
+    {
+      "id": "3",
+      "username": "profe2",
+      "password": "profe2"
+    },
+    {
+      "id": "4",
+      "username": "profe3",
+      "password": "profe3"
+    },
+    {
+      "id": "5",
+      "username": "profe4",
+      "password": "profe4"
+    },
+    {
+      "id": "6",
+      "username": "profe5",
+      "password": "profe5"
+    },
+    {
+      "id": "7",
+      "username": "profe6",
+      "password": "profe6"
+    }
+  ],
+  "asignaturas": [
+    {
+      "id": "1",
+      "nombre": "Mecánica",
+      "seccion": "1",
+      "profeId": "1"
+    },
+    {
+      "id": "2",
+      "nombre": "Mecánica",
+      "seccion": "2",
+      "profeId": "1"
+    },
+    {
+      "id": "3",
+      "nombre": "Redes de Computadores",
+      "seccion": "1",
+      "profeId": "2"
+    },
+    {
+      "id": "4",
+      "nombre": "Redes de Computadores",
+      "seccion": "2",
+      "profeId": "2"
+    },
+    {
+      "id": "5",
+      "nombre": "Arquitectura de Computadoras",
+      "seccion": "1",
+      "profeId": "3"
+    },
+    {
+      "id": "6",
+      "nombre": "Arquitectura de Computadoras",
+      "seccion": "2",
+      "profeId": "3"
+    },
+    {
+      "id": "7",
+      "nombre": "Bases de Datos",
+      "seccion": "1",
+      "profeId": "4"
+    },
+    {
+      "id": "8",
+      "nombre": "Bases de Datos",
+      "seccion": "2",
+      "profeId": "4"
+    },
+    {
+      "id": "9",
+      "nombre": "Matemáticas Discretas",
+      "seccion": "1",
+      "profeId": "5"
+    },
+    {
+      "id": "10",
+      "nombre": "Matemáticas Discretas",
+      "seccion": "2",
+      "profeId": "5"
+    },
+    {
+      "id": "11",
+      "nombre": "Lógica de Programación",
+      "seccion": "1",
+      "profeId": "6"
+    },
+    {
+      "id": "12",
+      "nombre": "Lógica de Programación",
+      "seccion": "2",
+      "profeId": "6"
+    },
+    {
+      "id": "13",
+      "nombre": "Ciberseguridad",
+      "seccion": "2",
+      "profeId": "7"
+    }
+  ],
+  "asistencias": [
+    {
+      "usuario_id": "1",
+      "asignatura_id": 1,
+      "fecha": "2024-11-03T08:00:00Z",
+      "asistio": false,
+      "id": "cd79"
+    },
+    {
+      "usuario_id": "1",
+      "asignatura_id": 3,
+      "fecha": "2024-11-05T08:00:00Z",
+      "asistio": true,
+      "id": "dc0c"
+    },
+    {
+      "usuario_id": "1",
+      "asignatura_id": 5,
+      "fecha": "2024-11-07T08:00:00Z",
+      "asistio": true,
+      "id": "c8c3"
+    },
+    {
+      "usuario_id": "1",
+      "asignatura_id": 7,
+      "fecha": "2024-11-09T08:00:00Z",
+      "asistio": true,
+      "id": "76ee"
+    },
+    {
+      "usuario_id": "1",
+      "asignatura_id": 9,
+      "fecha": "2024-11-11T08:00:00Z",
+      "asistio": false,
+      "id": "4d5b"
+    },
+    {
+      "usuario_id": "1",
+      "asignatura_id": 11,
+      "fecha": "2024-11-13T08:00:00Z",
+      "asistio": true,
+      "id": "387b"
+    },
+    {
+      "usuario_id": "2",
+      "asignatura_id": 11,
+      "fecha": "2024-11-02T08:00:00Z",
+      "asistio": true,
+      "id": "52bc"
+    },
+    {
+      "usuario_id": "2",
+      "asignatura_id": 1,
+      "fecha": "2024-11-06T08:00:00Z",
+      "asistio": true,
+      "id": "d31e"
+    },
+    {
+      "usuario_id": "2",
+      "asignatura_id": 3,
+      "fecha": "2024-11-08T08:00:00Z",
+      "asistio": false,
+      "id": "8827"
+    },
+    {
+      "usuario_id": "2",
+      "asignatura_id": 5,
+      "fecha": "2024-11-10T08:00:00Z",
+      "asistio": true,
+      "id": "2ece"
+    },
+    {
+      "usuario_id": "2",
+      "asignatura_id": 7,
+      "fecha": "2024-11-12T08:00:00Z",
+      "asistio": true,
+      "id": "d242"
+    },
+    {
+      "usuario_id": "2",
+      "asignatura_id": 13,
+      "fecha": "2024-11-14T08:00:00Z",
+      "asistio": false,
+      "id": "1a87"
+    }
+  ]
+}

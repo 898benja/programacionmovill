@@ -1,0 +1,60 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="home" style="--color: rgb(0, 0, 0);"></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+        <h1> Menú Principal </h1>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="welcome-title">Bienvenido al Sistema: {{ username }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="welcome-message">Selecciona una de las siguientes opciones:</p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-grid>
+      <ion-row justify-content-center align-items-center>
+        <ion-col size="12" size-md="6" class="card-center">
+          <ion-card [routerLink]="['/misasignaturas']" class="menu-card">
+            <ion-card-content>
+              <ion-icon name="book-outline" class="menu-icon"></ion-icon>
+              <h2 class="menu-text">Mis Asignaturas</h2>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12" size-md="6" class="card-center">
+          <ion-card [routerLink]="['/asistenciasalumno']" class="menu-card">
+            <ion-card-content>
+              <ion-icon name="checkmark-circle-outline" class="menu-icon"></ion-icon>
+              <h2 class="menu-text">Mis Asistencias</h2>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12" size-md="6" class="card-center">
+          <ion-card [routerLink]="['/registrarasistencia']" class="menu-card">
+            <ion-card-content>
+              <ion-icon name="create-outline" class="menu-icon"></ion-icon>
+              <h2 class="menu-text">Registrar Asistencia</h2>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12" size-md="6" class="card-center">
+          <ion-card [routerLink]="['/cambiarclave']" class="menu-card">
+            <ion-card-content>
+              <ion-icon name="key-outline" class="menu-icon"></ion-icon>
+              <h2 class="menu-text">Cambiar Clave</h2>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-app>

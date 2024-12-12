@@ -1,0 +1,88 @@
+ion-app {
+  font-family: 'Arial', sans-serif;
+  background-color: #fefbfb;
+  color: #fff;
+}
+
+ion-toolbar {
+  color: #fff;
+  padding: 10px 15px;
+}
+
+ion-title h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+ion-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  margin: 20px;
+  background-color: #222;
+  width: 100%;
+  margin-bottom: 10px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ion-card-header {
+  color: #000000;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ion-card-title {
+  color: white;
+}
+
+ion-card-content {
+  padding: 20px;
+}
+
+ion-item {
+  --background: transparent;
+  --border-radius: 0;
+  margin-bottom: 10px;
+  color: #000000;
+  transition: background-color 0.3s ease;
+  margin: 0;
+}
+
+ion-back-button {
+  color: #fff;
+}
+
+.welcome-title {
+  font-size: 20px;
+  text-align: center;
+  color: #010101;
+}
+
+.welcome-message {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+qrcode {
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

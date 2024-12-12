@@ -1,0 +1,56 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar color="yellow">
+      <ion-title>Mis Asistencias</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="menuprincipal" style="--color: white;"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <!-- Si no hay asistencias, mostramos un mensaje -->
+    <ion-card *ngIf="!asistencias || asistencias.length === 0">
+      <ion-card-header>
+        <ion-card-title>No tienes asistencias registradas</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Actualmente no tienes asistencias registradas. Por favor, revisa más tarde.</p>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Si hay asistencias, mostramos la lista -->
+    <ion-card *ngIf="asistencias && asistencias.length > 0">
+      <ion-card-header>
+        <ion-card-title>Mis Asistencias</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let asistencia of asistencias" (click)="toggleDetails(asistencia)">
+            <ion-label>
+              <h2>{{ asistencia.nombre }} {{ asistencia.seccion }}</h2>
+              <p>Fecha: {{ asistencia.fecha }}</p>
+              <p>Estado: {{ asistencia.estado }}</p> 
+            </ion-label>
+          </ion-item>
+        </ion-list>
+
+        <!-- Detalles de la asistencia seleccionada -->
+        <ion-card *ngFor="let asistencia of asistencias">
+          <ion-card-content *ngIf="asistencia.showDetails">
+            <ion-card-header>
+              <ion-card-title>Detalles de la Asistencia</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p><strong>Nombre del estudiante:</strong> {{ asistencia.nombre }}</p>
+              <p><strong>Sección:</strong> {{ asistencia.seccion }}</p>
+              <p><strong>Fecha:</strong> {{ asistencia.fecha }}</p>
+              <p><strong>Estado:</strong> {{ asistencia.estado }}</p>
+            </ion-card-content>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-app>

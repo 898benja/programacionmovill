@@ -1,0 +1,31 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Mis Asignaturas</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="menuprincipal" style="--color: rgb(4, 4, 4);"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <ion-list>
+      <!-- Mostrar todas las asignaturas -->
+      <ion-item *ngFor="let asignatura of asignaturas">
+        <ion-card class="asignatura-card" (click)="toggleQR(asignatura)">
+          <ion-card-header>
+            <ion-card-title class="asignatura-title">{{ asignatura.nombre }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Sección: {{ asignatura.seccion }}</p>
+            <!-- Mostrar el QR solo si showQR es true -->
+            <qrcode *ngIf="asignatura.showQR" 
+        [qrdata]="generateQRData(asignatura)" 
+        [width]="250" 
+        errorCorrectionLevel="M">
+</qrcode></ion-card-content>
+        </ion-card>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-app>

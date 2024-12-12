@@ -1,0 +1,41 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Mis Asignaturas</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="menuprincipal" style="--color: white;"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <!-- Mensaje cuando no hay asignaturas -->
+    <ion-card *ngIf="!asignaturas || asignaturas.length === 0" style="text-align: center;">
+      <ion-card-header>
+        <ion-card-title>No tienes asignaturas</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-icon name="alert-circle-outline" size="large" style="color: gray;"></ion-icon>
+        <p>Actualmente no tienes asignaturas asignadas. Por favor, revisa más tarde.</p>
+      </ion-card-content>
+    </ion-card>
+    <div *ngIf="asignaturas && asignaturas.length > 0">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title class="welcome-title">Mis Asignaturas</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <ion-list>
+        <ion-card *ngFor="let asignatura of asignaturas" style="margin-bottom: 10px; background-color: #1e1e2d;">
+          <ion-item lines="none" style="--ion-background-color: transparent;">
+            <ion-icon name="school-outline" slot="start" size="large" style="color: #4caf50;"></ion-icon>
+            <ion-label>
+              <h2 style="font-weight: bold; color: white;">{{ asignatura.nombre }}</h2>
+              <p style="color: white;">Sección: {{ asignatura.seccion }}</p>
+            </ion-label>
+          </ion-item>
+        </ion-card>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-app>
